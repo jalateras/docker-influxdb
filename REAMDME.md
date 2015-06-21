@@ -1,6 +1,6 @@
 # docker-influxdb
 
-Build a container using the latest version of [influxdb](https://influxdb.com/).
+Build a container for [influxdb v0.9](https://influxdb.com/).
 
 
 ### Building
@@ -8,7 +8,7 @@ Build a container using the latest version of [influxdb](https://influxdb.com/).
 To build 
 
 ```
-docker build --tag <userId>/influxdb .
+docker build --tag jalateras/influxdb .
 ```
 
 ### Running
@@ -16,7 +16,7 @@ docker build --tag <userId>/influxdb .
 To run the container as a daemon and therefore a single node influxdb cluster
 
 ```
-docker run -d --name influxdb <userId>/influxdb
+docker run -d --name influxdb -p 8083:8083 -p 8086:8086 jalateras/influxdb
 ```
 
 If everything works as expected then you can check the logs
