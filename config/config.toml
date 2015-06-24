@@ -43,7 +43,7 @@ reporting-disabled = true
 [logging]
   write-tracing = false
   raft-tracing = false
-  level  = "info"
+  level  = "debug"
   file   = "/logs/log.txt"
 
 ###
@@ -88,7 +88,7 @@ reporting-disabled = true
   bind-address = ":8086"
   auth-enabled = false
   log-enabled = true
-  write-tracing = false
+  write-tracing = true
   pprof-enabled = false
 
 ###
